@@ -13,19 +13,15 @@ public class RunningButton implements MouseListener {
     }
 
     @Override
-    public void mouseClicked(MouseEvent e) {
-        CanvasWindow canvasWindow = new CanvasWindow();
-    }
+    public void mouseClicked(MouseEvent e) {}
 
     @Override
     public void mousePressed(MouseEvent e) {
-
+        PasswordWindow passwordWindow = new PasswordWindow();
     }
 
     @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
+    public void mouseReleased(MouseEvent e) {}
 
     @Override
     public void mouseEntered(MouseEvent e) {
@@ -37,22 +33,25 @@ public class RunningButton implements MouseListener {
         Random rand = new Random();
         int n;
         int m;
-        do {
-            n = rand.nextInt(280);
-            n += 110;
-            m = rand.nextInt(280);
-            m += 110;
-            System.out.println(x);
-            System.out.println(y);
-            System.out.println(n);
-            System.out.println(m);
-        } while (Math.abs(x - n) < 200 && Math.abs(y - m) < 100);
 
-        e.getComponent().setLocation(n, m);
+        if (!(Math.abs(e.getComponent().getX() - x) < 10 && e.getComponent().getY() < y &&
+                y < e.getComponent().getY()+100))
+        {
+            do {
+                n = rand.nextInt(280);
+                n += 110;
+                m = rand.nextInt(280);
+                m += 110;
+                System.out.println(x);
+                System.out.println(y);
+                System.out.println(n);
+                System.out.println(m);
+            } while (Math.abs(x - n) < 200 && Math.abs(y - m) < 100);
+
+            e.getComponent().setLocation(n, m);
+        }
     }
 
     @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
+    public void mouseExited(MouseEvent e) {}
 }
