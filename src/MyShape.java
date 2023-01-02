@@ -1,7 +1,7 @@
 import java.awt.*;
 
-public class MyShape {
-    protected int x,y;
+public abstract class MyShape {
+    protected int x,y,height=50;
     protected Color color;
     public MyShape(int x, int y, Color color){
        this.x = x;

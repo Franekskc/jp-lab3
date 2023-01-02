@@ -11,18 +11,18 @@ public class RunningButton extends JButton implements MouseListener {
     public RunningButton(JFrame window) {
         this.window = window;
         setText("OK");
-        setBounds(200, 225, 100, 50);
+        setBounds(200, 175, 100, 50);
         addMouseListener(this);
         setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     }
 
     @Override
-    public void mouseClicked(MouseEvent e) {}
-
-    @Override
-    public void mousePressed(MouseEvent e) {
+    public void mouseClicked(MouseEvent e) {
         new PasswordWindow();
     }
+
+    @Override
+    public void mousePressed(MouseEvent e) {}
 
     @Override
     public void mouseReleased(MouseEvent e) {}
@@ -34,8 +34,6 @@ public class RunningButton extends JButton implements MouseListener {
 
         int x = (int) a.getX();
         int y = (int) a.getY();
-        System.out.println(x);
-        System.out.println(y);
 
         Random rand = new Random();
         int n;

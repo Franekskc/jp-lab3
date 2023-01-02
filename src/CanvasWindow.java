@@ -10,6 +10,7 @@ public class CanvasWindow extends JFrame{
     int tool;
     ArrayList<MyRectangle> rectangles = new ArrayList<>();
     ArrayList<MyOval> ovals = new ArrayList<>();
+    ArrayList<MyTriangle> triangles = new ArrayList<>();
 
     public CanvasWindow(){
 
@@ -27,27 +28,30 @@ public class CanvasWindow extends JFrame{
         window.add(canvasPanel);
         canvasPanel.addMouseListener(new MouseListener() {
             @Override
-            public void mouseClicked(MouseEvent e) {}
+            public void mouseClicked(MouseEvent e) {
+            }
 
             @Override
             public void mousePressed(MouseEvent e) {
+
                 Point a = MouseInfo.getPointerInfo().getLocation();
                 SwingUtilities.convertPointFromScreen(a, window);
                 int x = (int) a.getX();
                 int y = (int) a.getY();
-                switch (tool){
-                    case 2:
-                        break;
-                    case 3:
-                        rectangles.add(new MyRectangle(x-32,y-79,color));
+                switch (tool) {
+                    case 2 -> {
+                        triangles.add(new MyTriangle(x-9,y-45,color));
                         canvasPanel.repaint();
-                        break;
-                    case 4:
-                        ovals.add(new MyOval(x-32,y-79,color));
+                    }
+                    case 3 -> {
+                        rectangles.add(new MyRectangle(x - 32, y - 79, color));
                         canvasPanel.repaint();
-                        break;
+                    }
+                    case 4 -> {
+                        ovals.add(new MyOval(x - 32, y - 79, color));
+                        canvasPanel.repaint();
+                    }
                 }
-
             }
 
             @Override
@@ -82,7 +86,7 @@ public class CanvasWindow extends JFrame{
         color.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         tools.add(color);
 
-        JMenuItem pencil = new JMenuItem("Pencil (2)",KeyEvent.VK_2);
+        JMenuItem pencil = new JMenuItem("Triangle (2)",KeyEvent.VK_2);
         pencil.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -138,6 +142,16 @@ public class CanvasWindow extends JFrame{
         for (MyOval oval : ovals) {
             g2d.setColor(oval.color);
             g2d.drawOval(oval.x,oval.y,oval.width,oval.height);
+        }
+    }
+
+    public void drawMyTriangles(Graphics g) {
+        Graphics2D g2d = (Graphics2D) g;
+        for (MyTriangle triangle : triangles) {
+            g2d.setColor(triangle.color);
+            g2d.drawLine(triangle.a.startPoint.x,triangle.a.startPoint.y,triangle.a.endPoint.x,triangle.a.endPoint.y);
+            g2d.drawLine(triangle.b.startPoint.x,triangle.b.startPoint.y,triangle.b.endPoint.x,triangle.b.endPoint.y);
+            g2d.drawLine(triangle.c.startPoint.x,triangle.c.startPoint.y,triangle.c.endPoint.x,triangle.c.endPoint.y);
         }
     }
 }

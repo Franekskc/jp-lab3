@@ -14,5 +14,6 @@ public class CanvasPanel extends JPanel {
         super.paintComponent(g);
         window.drawMyRectangles(g);
         window.drawMyOvals(g);
+        window.drawMyTriangles(g);
     }
 }
