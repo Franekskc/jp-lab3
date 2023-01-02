@@ -1,18 +1,22 @@
 import javax.swing.*;
+import java.awt.*;
 
-public class MainWindow {
+public class MainWindow extends JFrame{
+
+
     public MainWindow(){
-        JFrame window = new JFrame();
-        window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        window.setSize(500,500);
-        window.setTitle("Uciekający przycisk");
 
-        JButton button = new JButton();
-        RunningButton runningButton = new RunningButton(button);
-        window.add(button);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setSize(500,500);
+        setTitle("Uciekający przycisk");
 
-        window.setLayout(null);
-        window.setVisible(true);
+        JButton runningButton = new RunningButton(this);
+        add(runningButton);
+
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setLayout(null);
+        setVisible(true);
 
     }
 }

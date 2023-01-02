@@ -5,11 +5,15 @@ import java.awt.event.MouseListener;
 import java.util.Random;
 import java.lang.Math;
 
-public class RunningButton implements MouseListener {
-    public RunningButton(JButton button) {
-        button.setText("OK");
-        button.setBounds(200, 225, 100, 50);
-        button.addMouseListener(this);
+public class RunningButton extends JButton implements MouseListener {
+
+    JFrame window;
+    public RunningButton(JFrame window) {
+        this.window = window;
+        setText("OK");
+        setBounds(200, 225, 100, 50);
+        addMouseListener(this);
+        setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     }
 
     @Override
@@ -17,7 +21,7 @@ public class RunningButton implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-        PasswordWindow passwordWindow = new PasswordWindow();
+        new PasswordWindow();
     }
 
     @Override
@@ -25,10 +29,13 @@ public class RunningButton implements MouseListener {
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        PointerInfo a = MouseInfo.getPointerInfo();
-        Point b = a.getLocation();
-        int x = (int) b.getX();
-        int y = (int) b.getY();
+        Point a = MouseInfo.getPointerInfo().getLocation();
+        SwingUtilities.convertPointFromScreen(a, window);
+
+        int x = (int) a.getX();
+        int y = (int) a.getY();
+        System.out.println(x);
+        System.out.println(y);
 
         Random rand = new Random();
         int n;
@@ -42,10 +49,6 @@ public class RunningButton implements MouseListener {
                 n += 110;
                 m = rand.nextInt(280);
                 m += 110;
-                System.out.println(x);
-                System.out.println(y);
-                System.out.println(n);
-                System.out.println(m);
             } while (Math.abs(x - n) < 200 && Math.abs(y - m) < 100);
 
             e.getComponent().setLocation(n, m);
@@ -54,4 +57,6 @@ public class RunningButton implements MouseListener {
 
     @Override
     public void mouseExited(MouseEvent e) {}
+
+
 }

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc0fea0-fef2-4320-b2f7-28ad73d42560" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="fcc0fea0-fef2-4320-b2f7-28ad73d42560" name="Changes" comment="dodanie możliwości kliknięcia przycisku i okna weryfikacji">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CanvasWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CanvasWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PasswordWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasswordWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RunningButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RunningButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,15 +35,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/frane/OneDrive/studia/III semestr/JP/lab2/jp_lab2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/frane/OneDrive/studia/III semestr/JP/lab2/jp_lab2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -67,8 +70,24 @@
       <workItem from="1671745688339" duration="3302000" />
       <workItem from="1672357683706" duration="64000" />
       <workItem from="1672399899574" duration="6000" />
-      <workItem from="1672401014299" duration="4567000" />
+      <workItem from="1672401014299" duration="9704000" />
+      <workItem from="1672417718438" duration="4336000" />
+      <workItem from="1672439657753" duration="8416000" />
+      <workItem from="1672496371488" duration="2364000" />
+      <workItem from="1672583547737" duration="3462000" />
+      <workItem from="1672587378042" duration="298000" />
+      <workItem from="1672655826106" duration="5811000" />
+      <workItem from="1672665418856" duration="1887000" />
+      <workItem from="1672675552102" duration="7455000" />
     </task>
+    <task id="LOCAL-00001" summary="dodanie możliwości kliknięcia przycisku i okna weryfikacji">
+      <created>1672410263503</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672410263503</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,5 +103,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dodanie możliwości kliknięcia przycisku i okna weryfikacji" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie możliwości kliknięcia przycisku i okna weryfikacji" />
   </component>
 </project>
