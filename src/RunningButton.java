@@ -8,6 +8,7 @@ import java.lang.Math;
 public class RunningButton extends JButton implements MouseListener {
 
     JFrame window;
+
     public RunningButton(JFrame window) {
         this.window = window;
         setText("OK");
@@ -22,10 +23,12 @@ public class RunningButton extends JButton implements MouseListener {
     }
 
     @Override
-    public void mousePressed(MouseEvent e) {}
+    public void mousePressed(MouseEvent e) {
+    }
 
     @Override
-    public void mouseReleased(MouseEvent e) {}
+    public void mouseReleased(MouseEvent e) {
+    }
 
     @Override
     public void mouseEntered(MouseEvent e) {
@@ -40,8 +43,7 @@ public class RunningButton extends JButton implements MouseListener {
         int m;
 
         if (!(Math.abs(e.getComponent().getX() - x) < 10 && e.getComponent().getY() < y &&
-                y < e.getComponent().getY()+100))
-        {
+                y < e.getComponent().getY() + 100)) {
             do {
                 n = rand.nextInt(280);
                 n += 110;
@@ -54,7 +56,8 @@ public class RunningButton extends JButton implements MouseListener {
     }
 
     @Override
-    public void mouseExited(MouseEvent e) {}
+    public void mouseExited(MouseEvent e) {
+    }
 
 
 }

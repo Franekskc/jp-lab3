@@ -3,13 +3,13 @@ import java.awt.*;
 import java.util.Arrays;
 
 
-public class PasswordWindow extends JFrame{
+public class PasswordWindow extends JFrame {
 
     public PasswordWindow() {
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setSize(250, 130);
-        setTitle("Weryfikacja");
+        setTitle("Verification");
         setLocationRelativeTo(null);
 
         JLabel passwordLabel = new JLabel();
@@ -25,7 +25,7 @@ public class PasswordWindow extends JFrame{
         confirmButton.setText("Confirm");
         confirmButton.setBounds(20, 50, 200, 30);
         confirmButton.addActionListener(e -> {
-            if (Arrays.equals(passwordField.getPassword(),"123".toCharArray())) {
+            if (Arrays.equals(passwordField.getPassword(), "123".toCharArray())) {
                 dispose();
                 new CanvasWindow();
             } else {

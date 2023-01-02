@@ -4,9 +4,10 @@ import java.awt.*;
 public class CanvasPanel extends JPanel {
 
     CanvasWindow window;
-    public CanvasPanel(CanvasWindow window){
+
+    public CanvasPanel(CanvasWindow window) {
         this.window = window;
-        setPreferredSize(new Dimension(400,400));
+        setPreferredSize(new Dimension(400, 400));
     }
 
     @Override

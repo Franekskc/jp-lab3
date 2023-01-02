@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc0fea0-fef2-4320-b2f7-28ad73d42560" name="Changes" comment="dodanie możliwości rysowania figur i zmianę kolorów">
+    <list default="true" id="fcc0fea0-fef2-4320-b2f7-28ad73d42560" name="Changes" comment="dodanie nowej figury - trójkąta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CanvasPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CanvasPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CanvasWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CanvasWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyOval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyOval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RunningButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RunningButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyLine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +75,7 @@
       <workItem from="1672587378042" duration="298000" />
       <workItem from="1672655826106" duration="5811000" />
       <workItem from="1672665418856" duration="1887000" />
-      <workItem from="1672675552102" duration="15982000" />
+      <workItem from="1672675552102" duration="20845000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie możliwości kliknięcia przycisku i okna weryfikacji">
       <created>1672410263503</created>
@@ -95,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672683969534</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dodanie nowej figury - trójkąta">
+      <created>1672694142359</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672694142359</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dodanie możliwości kliknięcia przycisku i okna weryfikacji" />
     <MESSAGE value="dodanie możliwości rysowania figur i zmianę kolorów" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie możliwości rysowania figur i zmianę kolorów" />
+    <MESSAGE value="dodanie nowej figury - trójkąta" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie nowej figury - trójkąta" />
   </component>
 </project>
